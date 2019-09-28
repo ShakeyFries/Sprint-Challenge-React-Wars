@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import './components/StarWarsNames';
 import StarWarsNames from './components/StarWarsNames';
+import "./components/StarWars.css";
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out

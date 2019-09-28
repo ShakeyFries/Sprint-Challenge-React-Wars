@@ -20,17 +20,22 @@ export default function StarWarsNames() {
       })
   }, []);
 
-      return(
+  return(
+    <container>
+      <row>
         <div className = 'names'>
           {names.map((star) => {
-          return (<NameList 
-            name={star.name}
-            gender={star.gender}
-            height={star.height}
-            hair={star.hair_color}
-          />
+          return (
+            <NameList 
+              name={star.name}
+              gender={star.gender}
+              height={star.height}
+              hair_color={star.hair_color}
+            />
           )}
-      )}
-    </div>
+        )}
+        </div>
+      </row>
+    </container>
   );
 }
