@@ -6,9 +6,10 @@ import { Card, CardText, CardBody, CardTitle, CardImg, Col } from "reactstrap";
 
 export default function NameList(props){
   return(
-    <Col xs ="6" lg="4" height="100%">
+    <Col>
       <Card className = "name-list" key={props.id}>
-        <CardBody height="100%">
+        {/* <CardImg src="./Han.jpg" width="100%" top /> */}
+        <CardBody className = "card" >
           <CardTitle>{props.name}</CardTitle>
           <CardText>{props.gender}</CardText>
           <CardText>Height: {props.height}</CardText>
