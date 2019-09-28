@@ -10,7 +10,7 @@ export default function StarWarsNames() {
   // console.log(starNames);
   useEffect (() => {
     axios
-      .get ("")
+      .get ("https://swapi.co/api/people/")
       .then( result => {
         setNames(result.data.results)
         console.log(result);
